@@ -14,6 +14,7 @@ class CreatePaginasTable extends Migration
     public function up()
     {
         Schema::create('paginas', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('titulo1');
             $table->text('content1');
             $table->string('titulo2');

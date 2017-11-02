@@ -9,7 +9,7 @@ class Pagina extends Model
     //
     Protected $fillable = [
 
-        'titulo1', 'content1','titulo2', 'content2','titulo3', 'content3'
+        'id','titulo1', 'content1','titulo2', 'content2','titulo3', 'content3'
 
     ];
 }

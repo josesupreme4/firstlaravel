@@ -30,6 +30,6 @@ class HomeController extends Controller
 
         $pagina= Pagina::All();
         
-        return view('home')->with('pagina',$pagina);;
+        return view('home')->with('pagina',$pagina);
     }
 }

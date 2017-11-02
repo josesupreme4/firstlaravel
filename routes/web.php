@@ -13,6 +13,9 @@
 
 Route::get('/', 'WebController@index');
 
+Route::get('/actualizar', 'WebController@update');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+

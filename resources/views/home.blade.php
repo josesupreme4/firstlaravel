@@ -19,7 +19,7 @@
     <div class="row">
     <div class="col-md-8 col-md-offset-2">
 
-        <form role="form" method="POST">
+        <form role="form" method="" action="{{ url('/actualizar') }}">
         {{ csrf_field() }}
         @foreach($pagina as $pagina) 
         <div class="col-md-12"><h2>Inicio</h2></div>
@@ -63,7 +63,7 @@
  <div class="form-group">
                             <div class="col-md-8 col-md-offset-4"> <br>
                                 <button type="submit" class="btn btn-primary">
-                                    Login
+                                    actualizar
                                 </button>
         </form>
 

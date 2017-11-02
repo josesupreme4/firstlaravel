@@ -74,9 +74,23 @@ class WebController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
         //
+   
+        $pagina= Pagina::find(1);
+        $pagina->titulo1=$request->titulo1;
+        $pagina->content1=$request->content1;
+        $pagina->titulo2=$request->titulo2;
+        $pagina->content2=$request->content2;
+        $pagina->titulo3=$request->titulo3;
+        $pagina->content3=$request->content3;
+        $pagina->save();
+
+        $pagina= Pagina::All();
+
+        return view('home')->with('pagina',$pagina);
+
     }
 
     /**
